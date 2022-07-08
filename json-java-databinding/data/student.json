@@ -1,7 +1,16 @@
 {
-	"name" : "mayur",
-	"address" : "BLR",
-	"city" : "Mumbai",
-	"id" : 2	
-
+	"name": "mayur",
+	"address": "BLR",
+	"city": "Mumbai",
+	"id": 2,
+	"isActive": true,
+	"phone": [
+		98212,
+		4533
+	],
+	"batch": {
+		"batchName": "IAS-1",
+		"trainer": "prashant",
+		"time" : "9.00 am"
+	}
 }
