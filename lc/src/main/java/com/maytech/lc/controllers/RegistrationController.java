@@ -19,6 +19,7 @@ public class RegistrationController {
 	@RequestMapping("/registration-success")
 	public String processUserReg(@ModelAttribute("userReg")UserRegistrationDTO dto) {
 		
+		System.out.println("Inside processUserReg method");
 		return "registration-succes";
 	}
 }

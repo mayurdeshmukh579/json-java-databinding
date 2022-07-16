@@ -11,7 +11,8 @@
 	<h1 align="center">Please fill below registration form</h1>
 	<hr />
 	<div align="center">
-		<form:form action = "registration-success" method="get" modelAttribute = "userReg">
+		<form:form action="registration-success" method="get"
+			modelAttribute="userReg">
 			<label>User :</label>
 			<form:input path="name" />
 			<br />
@@ -39,6 +40,14 @@
 		Female<form:radiobutton path="gender" value="female" />
 
 			<br />
+
+			<label>Email</label>
+			<form:input path="communicationDTO.email" />
+			
+			<label>Phone</label>
+			<form:input path="communicationDTO.phone"/>
+			<br />
+
 			<input type="submit" value="register" />
 	</div>
 	</form:form>
