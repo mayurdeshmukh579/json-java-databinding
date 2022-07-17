@@ -16,6 +16,7 @@
 	<br /> Username : ${userReg.userName}
 	<br /> Countryname : ${userReg.countryName}
 	<br /> Hobbies :
+	<br /> Age : ${userReg.age}
 	<br /> Email : ${userReg.communicationDTO.email}
 	<br /> Phone : ${userReg.communicationDTO.phone }
 	<c:forEach var="temp" items="${userReg.hobbies}">

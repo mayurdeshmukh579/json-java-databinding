@@ -6,6 +6,17 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Register</title>
+<style type="text/css">
+.error {
+	color: red;
+	position: fixed;
+	text-align: left;
+	margin-left: 30px;
+}
+.no-background {
+    background-image: url("image/lci.jpg");
+}
+</style>
 </head>
 <body>
 	<h1 align="center">Please fill below registration form</h1>
@@ -39,6 +50,10 @@
 		Male<form:radiobutton path="gender" value="male" />
 		Female<form:radiobutton path="gender" value="female" />
 
+			<br />
+			<label>Age :</label>
+			<form:input path = "age" />
+			<form:errors path="age" cssClass="error"></form:errors>
 			<br />
 
 			<label>Email</label>

@@ -1,5 +1,7 @@
 package com.maytech.lc.api;
 
+import com.maytech.lc.Validator.Age;
+
 public class UserRegistrationDTO {
 
 	
@@ -10,6 +12,15 @@ public class UserRegistrationDTO {
 	private String[] hobbies;
 	private String gender;
 	
+	@Age(lower = 30,upper = 75)
+	private Integer age;
+	
+	public Integer getAge() {
+		return age;
+	}
+	public void setAge(Integer age) {
+		this.age = age;
+	}
 	private CommunicationDTO communicationDTO;
 	
 	public String getCountryName() {
