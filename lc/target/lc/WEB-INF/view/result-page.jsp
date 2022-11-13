@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<%@ page isELIgnored = "false" %>
-	
+<%@ page isELIgnored="false"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,8 +9,10 @@
 <title>Love Calculator</title>
 </head>
 <body>
-	<p>userName is : ${userInfo.userName}</p>
-	<p>crushName is : ${userInfo.crushName}</p>
-	<p>Password is : $(userInfo.password)</p>
+	<br> ${userInfo.userName } and ${userInfo.crushName } are
+	</br> Friend
+	<br />
+
+	<a href="/lc/sendEmail/${userInfo.userName}">Send Result to your Email<a />
 </body>
 </html>
